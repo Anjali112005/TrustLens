@@ -1,221 +1,228 @@
-# TrustLens — Hackathon Context
+# TrustLens — iQOO Hackathon 2026
 
-## 1. Hackathon
+## 1. Hackathon Context
 
-**iQOO Hackathon 2026 — City Battles**
+**TrustLens** is being prepared for the **iQOO Hackathon 2026 Grand Finale**.
 
-TrustLens was designed for the iQOO Hackathon 2026, a phone-first AI hackathon organized by **iQOO × Reskilll**.
-
-The competition includes city battles across Bengaluru, Pune, Chennai, and Hyderabad, followed by a Grand Finale in Bengaluru. Each City Battle is a 30-hour build focused on creating practical AI-powered solutions using the phone as an important part of the build and demo experience.
-
-### Hyderabad Battle
+### Event
 
 ```text
-City: Hyderabad
-Dates: 26–27 September 2026
-Format: 30-hour City Battle
-Track: Open Innovation / Community-oriented solution
-Project: TrustLens
+Hackathon: iQOO Hackathon 2026
+Stage: Grand Finale
+Location: Bengaluru
+Date: October 9–11, 2026
+Duration: 48 Hours
+Organizers: iQOO × Reskilll
+Prize Pool: ₹40,00,000 across the series
 ```
 
----
-
-# 2. Hackathon Philosophy
-
-The iQOO Hackathon is designed around a **phone-first development approach**.
-
-The phone is not only the device used to present the final product.
-
-It should become part of the actual solution through capabilities such as:
-
-* Camera
-* Voice
-* On-device AI
-* Mobile interaction
-* iQOO hardware capabilities
-* Office Kit integration
-
-A local or open-source model at the core also earns additional recognition.
-
-This directly influences the TrustLens architecture.
+The Grand Finale brings together top teams from the four City Battles along with eligible direct Finale registrations.
 
 ---
 
-# 3. TrustLens × iQOO
+# 2. Grand Finale Tracks
 
-TrustLens is designed around the idea that users often encounter suspicious opportunities directly through their phones.
+The Grand Finale has six tracks:
 
-Examples:
+| Track               | Scope                                                                   |
+| ------------------- | ----------------------------------------------------------------------- |
+| **Mobility**        | Navigation, EVs, public transport, parking and travel                   |
+| **Community App**   | AI-powered communities for developers, professionals or interest groups |
+| **Smart Living**    | Smart homes, IoT, connected devices and everyday convenience            |
+| **Productivity**    | AI-powered work, automation, information and workflow solutions         |
+| **Developer Tools** | AI tools for development, testing, deployment and collaboration         |
+| **Open Innovation** | Any domain or idea outside the defined tracks                           |
+
+TrustLens is best positioned under **Open Innovation**, because it addresses digital trust and investigation rather than a specific domain track.
+
+---
+
+# 3. Why TrustLens Fits the Grand Finale
+
+TrustLens addresses a real-world problem:
+
+> **How can a user determine whether a digital opportunity can actually be trusted?**
+
+Users increasingly encounter:
 
 ```text
-WhatsApp Message
-       ↓
-Internship Offer
-       ↓
+Internship
+Job Offer
+Event
 Recruiter
-       ↓
 Website
-       ↓
 QR Code
-       ↓
 Payment Request
+Document
 ```
 
-Therefore, the smartphone itself becomes the natural investigation device.
+through their phones.
 
-### Phone-first TrustLens
+TrustLens turns the phone into an **AI-powered investigation device**.
 
 ```text
-Camera
-   ↓
-Capture Evidence
-   ↓
-AI Investigation
-   ↓
-Voice Questions
-   ↓
-Risk Analysis
-   ↓
-Trust Report
+Phone Camera / Upload / Voice
+              ↓
+       Multimodal AI
+              ↓
+      Evidence Extraction
+              ↓
+       Cross Verification
+              ↓
+       Risk Analysis
+              ↓
+      Evidence Graph
+              ↓
+      Trust Report
 ```
-
-The planned implementation will make the iQOO phone a core part of both the user experience and the investigation workflow.
 
 ---
 
 # 4. Official Evaluation Criteria
 
-The published iQOO Hackathon 2026 City Battle scoring rubric contains **six evaluation dimensions totaling 100%**.
+The official scoring system contains **six evaluation dimensions totaling 100%**.
 
-| Criterion           |   Weight |
-| ------------------- | -------: |
-| End Product Quality |  **30%** |
-| Novelty & Impact    |  **20%** |
-| Creative Phone Use  |  **15%** |
-| Technical Depth     |  **15%** |
-| Office Kit Usage    |  **10%** |
-| Demo & Presentation |  **10%** |
-| **Total**           | **100%** |
+| Evaluation Criterion    |   Weight |
+| ----------------------- | -------: |
+| **End Product Quality** |  **30%** |
+| **Novelty & Impact**    |  **20%** |
+| **Creative Phone Use**  |  **15%** |
+| **Technical Depth**     |  **15%** |
+| **Office Kit Usage**    |  **10%** |
+| **Demo & Presentation** |  **10%** |
+| **Total**               | **100%** |
+
+The rubric combines jury evaluation with device-based HackTracker measurements for creative phone use and Office Kit usage.
 
 ---
 
-# 5. How TrustLens Targets Each Criterion
+# 5. TrustLens Scoring Strategy
 
 ## 5.1 End Product Quality — 30%
 
-### What the judges look for
+### Judge Focus
 
 * Does it work?
 * Is it useful?
-* Would someone actually use it?
-* Is the experience polished?
+* Would people actually use it?
 
-### TrustLens Strategy
+### TrustLens Approach
 
-We will focus on delivering a complete investigation workflow instead of many disconnected features.
+The product should provide one complete workflow:
 
 ```text
-Input
- ↓
-AI Processing
- ↓
-Evidence
- ↓
-Verification
- ↓
-Risk Analysis
- ↓
-Trust Report
+Capture Evidence
+      ↓
+Understand Evidence
+      ↓
+Verify Evidence
+      ↓
+Find Relationships
+      ↓
+Identify Risk
+      ↓
+Explain Result
 ```
 
-The goal is to make the final demo feel like a real product rather than a collection of AI experiments.
+Instead of presenting multiple disconnected AI features, the final build should demonstrate a reliable end-to-end investigation.
 
 ### Target
 
 ```text
 ✓ Working core workflow
-✓ Reliable demo
-✓ Clear UX
-✓ Useful output
-✓ Explainable results
+✓ Smooth phone experience
+✓ Clear investigation result
+✓ Useful recommendations
+✓ Explainable output
 ```
 
 ---
 
 # 6. Novelty & Impact — 20%
 
-TrustLens is not intended to be only a:
+TrustLens should not position itself as simply a:
 
 ```text
 URL Checker
 Spam Detector
-Company Search
 QR Scanner
+Company Search
+Chatbot
 ```
 
-Instead, it connects multiple pieces of evidence.
+The key idea is **relationship-based investigation**.
+
+Example:
 
 ```text
 Company
-   │
-   ├── Website
-   ├── Recruiter
-   ├── Email
-   ├── Offer
-   ├── Event
-   └── Payment
-          ↓
-     Investigation
+ ├── Website
+ ├── Recruiter
+ │     └── Email
+ ├── Offer
+ ├── Event
+ └── Payment
 ```
 
-The key idea is:
+TrustLens asks:
 
 > **Do these pieces of evidence actually belong together?**
 
-This relationship-based investigation is the main differentiator of TrustLens.
+This allows the system to identify inconsistencies that may not be visible when checking only one signal.
 
 ---
 
 # 7. Creative Phone Use — 15%
 
-This is one of the most important criteria for TrustLens.
+This is a major part of the iQOO Hackathon.
 
-The planned product will use the phone for:
+The official rules require the iQOO phone to be the build and demo surface, with camera, voice and on-device AI contributing to the creative-phone-use score.
+
+TrustLens will use:
 
 ### Camera
 
 ```text
 Scan Poster
+     ↓
+Extract Information
+     ↓
+Investigate
+```
+
+### QR
+
+```text
 Scan QR
-Capture Offer
-Capture Screenshot
-        ↓
-AI Investigation
+     ↓
+Extract URL
+     ↓
+Verify Registration Source
 ```
 
 ### Voice
 
 ```text
 "Why is this suspicious?"
-        ↓
+          ↓
 Speech-to-Text
-        ↓
+          ↓
 Investigation
-        ↓
-Voice / Text Response
+          ↓
+AI Response
 ```
 
 ### Mobile AI
 
-The phone will be the primary interaction surface for the investigation.
-
-The final implementation should demonstrate that TrustLens is not simply a web application displayed on a phone.
+The phone should be an actual part of the investigation workflow, not simply a screen for a web application.
 
 ---
 
 # 8. Technical Depth — 15%
 
-The planned architecture goes beyond a simple LLM chatbot.
+TrustLens is designed as more than a single LLM prompt.
+
+### Planned Architecture
 
 ```text
 Android / Mobile
@@ -239,77 +246,129 @@ Evidence Graph
 Trust Report
 ```
 
-### Planned technologies
+### Technical Components
 
-* Android / Kotlin
-* Python
-* FastAPI
-* Gemini Multimodal AI
-* OCR / Vision
-* REST APIs
-* MySQL
-* Verification APIs / trusted sources
-* Evidence relationship model
-* Risk analysis engine
+```text
+Android / Kotlin
+Python
+FastAPI
+Gemini Multimodal AI
+OCR / Vision
+REST APIs
+MySQL
+Verification APIs
+Evidence Relationship Model
+Risk Analysis
+```
 
-The technical depth will come from combining AI with structured evidence processing and verification rather than relying on a single LLM response.
+The technical depth comes from combining multimodal AI with structured evidence processing, verification and explainable reasoning.
 
 ---
 
-# 9. Office Kit Usage — 10%
+# 9. Local / Open-Source AI
 
-iQOO Office Kit is designed to bridge the phone and laptop into a shared build environment.
+The official hackathon guide gives brownie points for having a **local or open-source model at the core**, with the phone in the loop through Office Kit.
 
-TrustLens can use this during development and the hackathon workflow for:
+Therefore, the final implementation should evaluate whether a local/open-source model can be incorporated into TrustLens where technically practical.
+
+Possible architecture:
+
+```text
+                TrustLens
+                    │
+          ┌─────────┴─────────┐
+          ↓                   ↓
+   Local/Open Model       Cloud AI
+          │                   │
+          └─────────┬─────────┘
+                    ↓
+             Investigation
+```
+
+The exact model will depend on the available iQOO hardware and the performance achievable during the Finale.
+
+---
+
+# 10. Office Kit Usage — 10%
+
+Office Kit connects the iQOO phone with the laptop through capabilities including:
+
+* Screen mirroring
+* Shared clipboard
+* File transfer
+* Remote control
+
+The official rules state that Office Kit usage is measured through HackTracker device data.
+
+TrustLens can use Office Kit for:
 
 ```text
 iQOO Phone
      ↕
 Office Kit
      ↕
-Laptop
+Development Laptop
 ```
 
-Potential usage includes:
+Possible usage:
 
-* Phone-first application testing
-* Screen mirroring
-* File transfer
-* Development workflow
-* Testing phone ↔ backend interaction
-* Demonstrating the phone as the primary device
+```text
+Phone
+ ↓
+Capture Evidence
+ ↓
+Office Kit
+ ↓
+Development / Processing Environment
+ ↓
+Investigation
+ ↓
+Phone
+ ↓
+Trust Report
+```
 
-Office Kit usage is tracked as part of the hackathon evaluation.
+The phone should remain central to the workflow rather than being used only at the end for presentation.
 
 ---
 
-# 10. Demo & Presentation — 10%
+# 11. Demo & Presentation — 10%
 
-The final pitch is expected to be approximately **3–5 minutes**.
+The official judging criteria specify a **3–5 minute pitch**.
 
-TrustLens will use a simple story:
+The TrustLens presentation should follow a simple story.
 
 ```text
-1. Problem
+1. Real Problem
        ↓
-2. Real-world Scam Scenario
+2. Suspicious Opportunity
        ↓
-3. TrustLens Investigation
+3. Capture Evidence
        ↓
-4. Evidence Extraction
+4. AI Investigation
        ↓
 5. Cross Verification
        ↓
 6. Risk Signals
        ↓
-7. Trust Report
+7. Evidence Graph
        ↓
-8. Why TrustLens is Different
+8. Trust Report
 ```
 
-### Recommended Demo Scenario
+### Recommended Opening
 
-Use the internship scam scenario:
+Start with the real-world problem:
+
+> "A friend paid ₹850 for an internship, completed the work, and later discovered that the opportunity was a scam."
+
+Then demonstrate how TrustLens would investigate the evidence before the user commits time or money.
+
+---
+
+# 12. Recommended Grand Finale Demo
+
+### Scenario
 
 ```text
 Internship Offer
@@ -320,188 +379,215 @@ Email
       ↓
 Website
       ↓
-₹2,500 Fee
-      ↓
-TrustLens Investigation
+Registration / Payment Request
 ```
 
-Then demonstrate:
+The user scans the offer using the iQOO phone.
+
+TrustLens extracts:
 
 ```text
-✓ Company found
+Company
+Recruiter
+Email
+Website
+Role
+Fee
+Registration Link
+```
 
-× Recruiter mismatch
-× Email/domain mismatch
-× Payment risk
+Then investigates their relationships.
 
-        ↓
+Example result:
+
+```text
+TRUST ASSESSMENT
 
 HIGH RISK
+
+✓ Company identity found
+
+× Recruiter relationship not verified
+× Email/domain mismatch
+× Upfront payment requested
+× Payment relationship not verified
 ```
 
-The presentation should focus on the **investigation journey**, not on explaining every technical component.
+Then show:
+
+```text
+Evidence Graph
+      ↓
+Why It Is Suspicious
+      ↓
+Recommended Next Action
+```
+
+This demonstrates the complete product rather than a simple AI-generated answer.
 
 ---
 
-# 11. TrustLens Evaluation Strategy
+# 13. Product Quality Priorities
 
-Our development priorities should follow the scoring weight.
+Because **End Product Quality carries the highest weight (30%)**, development should prioritize a reliable core workflow over excessive features.
+
+### Priority 1
 
 ```text
-30%  End Product Quality
-       ↓
-20%  Novelty & Impact
-       ↓
-15%  Creative Phone Use
-       ↓
-15%  Technical Depth
-       ↓
-10%  Office Kit Usage
-       ↓
-10%  Demo & Presentation
+Camera → AI → Investigation → Result
 ```
 
-### Priority Order
+### Priority 2
 
-**1. Make the core product work.**
+```text
+Voice → Investigation → Explanation
+```
 
-**2. Make the investigation concept clearly different.**
+### Priority 3
 
-**3. Make the phone an actual part of the product.**
+```text
+QR → URL → Verification
+```
 
-**4. Add meaningful technical depth.**
+### Priority 4
 
-**5. Use Office Kit properly.**
+```text
+Evidence Graph
+```
 
-**6. Polish the final pitch and demo.**
+### Priority 5
+
+Additional advanced features.
+
+> **A smaller working product is better than a large unfinished system.**
 
 ---
 
-# 12. What We Should NOT Do
-
-TrustLens should avoid becoming:
-
-```text
-❌ Just a chatbot
-❌ Just a website checker
-❌ Just an OCR application
-❌ Just a fake/scam classifier
-❌ A dashboard with no real phone interaction
-❌ A collection of disconnected AI features
-```
-
-Instead:
-
-```text
-Evidence
-   ↓
-AI Understanding
-   ↓
-Cross Verification
-   ↓
-Relationship Analysis
-   ↓
-Risk
-   ↓
-Explanation
-```
-
----
-
-# 13. Hackathon Build Goal
+# 14. Grand Finale Build Direction
 
 The current repository contains the **TrustLens demo/prototype**.
 
-During the actual hackathon, the goal is to evolve it into a functional phone-first AI investigation prototype.
+The Grand Finale implementation should focus on building the actual investigation engine.
 
-### Current
+### Current Demo
 
 ```text
-Controlled Demo
-      ↓
-Predefined Scenarios
-      ↓
+Controlled Evidence
+       ↓
+Demo Investigation
+       ↓
 Demonstration Result
 ```
 
-### Hackathon
+### Grand Finale Build
 
 ```text
 Real User Evidence
-      ↓
+       ↓
 Camera / Upload / Voice
-      ↓
+       ↓
 Multimodal AI
-      ↓
+       ↓
 Evidence Extraction
-      ↓
+       ↓
+Entity Resolution
+       ↓
 Verification
-      ↓
+       ↓
 Investigation Engine
-      ↓
+       ↓
 Risk Analysis
-      ↓
+       ↓
 Evidence Graph
-      ↓
+       ↓
 Explainable Trust Report
 ```
 
 ---
 
-# 14. Expected Final Product
+# 15. Grand Finale Success Criteria
 
-The ideal final TrustLens demo should allow a user to:
+Our goal is to make TrustLens strong across all six evaluation dimensions.
 
-```text
-1. Open TrustLens on the iQOO phone
-             ↓
-2. Scan or upload suspicious evidence
-             ↓
-3. Ask a question using voice
-             ↓
-4. Let AI extract the evidence
-             ↓
-5. Cross-check related entities
-             ↓
-6. Identify positive and negative signals
-             ↓
-7. View the evidence graph
-             ↓
-8. Receive an explainable trust assessment
-```
-
-The user should leave the investigation knowing:
-
-> **What was found, what matched, what did not match, and what they should verify next.**
+| Area                 | TrustLens Goal                                      |
+| -------------------- | --------------------------------------------------- |
+| **Product Quality**  | Reliable end-to-end investigation                   |
+| **Novelty & Impact** | Evidence relationship investigation                 |
+| **Phone Use**        | Camera + QR + Voice + mobile AI                     |
+| **Technical Depth**  | Multimodal AI + verification + investigation engine |
+| **Office Kit**       | Meaningful phone ↔ laptop workflow                  |
+| **Presentation**     | Clear 3–5 minute investigation story                |
 
 ---
 
-# 15. Competition Goal
+# 16. Final Product Vision
 
-TrustLens is being designed not only to demonstrate an AI concept, but to align with the core philosophy of the iQOO Hackathon:
+TrustLens should demonstrate:
 
 ```text
-PHONE-FIRST
+              iQOO PHONE
+                  │
+       ┌──────────┼──────────┐
+       ↓          ↓          ↓
+    Camera      Voice       QR
+       │          │          │
+       └──────────┼──────────┘
+                  ↓
+          MULTIMODAL AI
+                  ↓
+         EVIDENCE ENGINE
+                  ↓
+          VERIFICATION
+                  ↓
+         RISK ANALYSIS
+                  ↓
+         EVIDENCE GRAPH
+                  ↓
+          TRUST REPORT
+```
+
+The objective is to build something that is:
+
+**Phone-first. AI-native. Evidence-driven. Explainable. Useful.**
+
+---
+
+# 17. Important Hackathon Constraint
+
+The official rules state that entries must be **original work built during the event window**. Open-source libraries and frameworks are allowed with attribution, but participants cannot bring in a completed application.
+
+Therefore, the current TrustLens repository should be treated as:
+
+```text
+Design / Prototype / Preparation
+```
+
+The actual Grand Finale implementation should be developed according to the event's rules and build window.
+
+---
+
+# 18. TrustLens × iQOO Grand Finale
+
+The Grand Finale opportunity is not simply about adding more features.
+
+The goal is to demonstrate:
+
+```text
+REAL PROBLEM
      +
-AI-NATIVE
+PHONE-FIRST EXPERIENCE
      +
-REAL-WORLD PROBLEM
+MULTIMODAL AI
      +
 TECHNICAL DEPTH
+     +
+NOVEL INVESTIGATION
      +
 STRONG DEMO
 ```
 
-The objective is to build a product that feels **useful on the phone, technically meaningful underneath, and easy to understand in a short live demonstration**.
-
----
-
-## TrustLens × iQOO Hackathon 2026
-
 > **Don't trust the name. Investigate the evidence.**
 
-### Build for the phone.
+### TrustLens
 
-### Investigate with AI.
-
-### Trust the evidence.
+**Investigate before you trust.**
