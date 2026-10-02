@@ -1,10 +1,11 @@
 import React from 'react';
-import { Home, ShieldAlert, History, User } from 'lucide-react';
+import { Home, ShieldAlert, Users, History, User } from 'lucide-react';
 
 export default function BottomNav({ activeTab, setActiveTab }) {
   const tabs = [
     { id: 'home', label: 'Home', icon: Home },
     { id: 'cases', label: 'Investigate', icon: ShieldAlert },
+    { id: 'community', label: 'Community', icon: Users },
     { id: 'history', label: 'History', icon: History },
     { id: 'profile', label: 'Profile', icon: User },
   ];

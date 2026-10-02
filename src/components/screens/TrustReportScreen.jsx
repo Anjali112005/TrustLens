@@ -1,12 +1,24 @@
 import React, { useState } from 'react';
-import { ShieldAlert, FileText, Mic, Download, Share2, CheckCircle, AlertCircle, Sparkles } from 'lucide-react';
+import { ShieldAlert, FileText, Mic, Download, Share2, CheckCircle, AlertCircle, Sparkles, Users } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import StepJourneyBar from '../StepJourneyBar';
-import { DEMO_CASES } from '../../data/demoCases';
+import { DEMO_CASES, COMMUNITY_REPORTS } from '../../data/demoCases';
 
-export default function TrustReportScreen({ caseId = 'suspicious-internship', onNavigate, onSelectStep }) {
+export default function TrustReportScreen({ caseId = 'suspicious-internship', onNavigate, onSelectStep, onOpenCommunityReport, onPublishToCommunity }) {
   const [toastMessage, setToastMessage] = useState('');
+  const [showShareSheet, setShowShareSheet] = useState(false);
+  const [shareSignals, setShareSignals] = useState(true);
+  const [shareSummary, setShareSummary] = useState(true);
+  const [sharePersonalInfo, setSharePersonalInfo] = useState(false);
   const selectedCase = DEMO_CASES.find(c => c.id === caseId) || DEMO_CASES[0];
+  const relatedReports = COMMUNITY_REPORTS.filter((report) => {
+    const entityMatch = report.entityName === selectedCase.entityName;
+    const tagMatch = (report.tags || []).some((tag) => {
+      const haystack = [selectedCase.entityName, selectedCase.website, selectedCase.recruiter, selectedCase.role, selectedCase.category].filter(Boolean);
+      return haystack.some((value) => value && tag.toLowerCase().includes(value.toLowerCase()));
+    });
+    return entityMatch || tagMatch;
+  });
 
   const handleSave = () => {
     confetti({
@@ -22,6 +34,15 @@ export default function TrustReportScreen({ caseId = 'suspicious-internship', on
     navigator.clipboard?.writeText?.(window.location.href);
     setToastMessage('Report link copied to clipboard!');
     setTimeout(() => setToastMessage(''), 3000);
+  };
+
+  const publishToCommunity = () => {
+    if (onPublishToCommunity) {
+      onPublishToCommunity(caseId);
+      setShowShareSheet(false);
+      setToastMessage('Investigation shared with the TrustLens community.');
+      setTimeout(() => setToastMessage(''), 3000);
+    }
   };
 
   return (
@@ -110,6 +131,48 @@ export default function TrustReportScreen({ caseId = 'suspicious-internship', on
         </div>
       </div>
 
+      <div className="community-related-panel">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', marginBottom: '8px' }}>
+          <div style={{ fontSize: '11px', fontWeight: '800', color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
+            Community Check
+          </div>
+          <Users size={14} color="#1677FF" />
+        </div>
+
+        {relatedReports.length > 0 ? (
+          <>
+            <div style={{ fontSize: '12px', color: '#0F172A', fontWeight: '700', marginBottom: '6px' }}>
+              {relatedReports.length} related community investigations found
+            </div>
+            <button className="btn-mobile-secondary" style={{ padding: '10px 12px', fontSize: '11px' }} onClick={() => onOpenCommunityReport?.(relatedReports[0].id)}>
+              View Community Evidence
+            </button>
+          </>
+        ) : (
+          <>
+            <div style={{ fontSize: '12px', color: '#0F172A', fontWeight: '600', marginBottom: '6px' }}>
+              No related community investigations found yet.
+            </div>
+            <button className="btn-mobile-primary" style={{ padding: '10px 12px', fontSize: '11px' }} onClick={() => setShowShareSheet(true)}>
+              Share with Community
+            </button>
+          </>
+        )}
+      </div>
+
+      <div className="community-related-panel">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', marginBottom: '10px' }}>
+          <div style={{ fontSize: '11px', fontWeight: '800', color: '#64748B', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
+            Share with Community
+          </div>
+          <Share2 size={14} color="#1677FF" />
+        </div>
+
+        <button className="btn-mobile-primary" style={{ padding: '10px 12px', fontSize: '12px' }} onClick={() => setShowShareSheet(true)}>
+          Publish community insight
+        </button>
+      </div>
+
       {/* Action Buttons Row */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '8px' }}>
         <button className="btn-mobile-secondary" style={{ padding: '10px 4px', fontSize: '11px' }} onClick={handleSave}>
@@ -124,6 +187,41 @@ export default function TrustReportScreen({ caseId = 'suspicious-internship', on
           <Mic size={14} /> Ask AI
         </button>
       </div>
+
+      {showShareSheet && (
+        <div className="share-modal-backdrop" onClick={() => setShowShareSheet(false)}>
+          <div className="share-modal-card" onClick={(e) => e.stopPropagation()}>
+            <div className="community-detail-label" style={{ marginBottom: '8px' }}>Share Investigation</div>
+            <h3 style={{ fontSize: '18px', fontWeight: '800', color: '#0F172A', margin: '0 0 8px' }}>Help others who may encounter the same opportunity.</h3>
+
+            <div className="share-summary-grid">
+              <div><span>Entity</span><strong>{selectedCase.entityName}</strong></div>
+              <div><span>Opportunity</span><strong>{selectedCase.role || selectedCase.category}</strong></div>
+              <div><span>Risk level</span><strong style={{ color: selectedCase.riskColor }}>{selectedCase.riskLevel}</strong></div>
+              <div><span>Evidence</span><strong>{selectedCase.signals[0]?.text || 'Trust signal detected'}</strong></div>
+            </div>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '14px' }}>
+              <label className="share-option-row">
+                <input type="checkbox" checked={shareSignals} onChange={() => setShareSignals(!shareSignals)} />
+                <span>Share risk signals</span>
+              </label>
+              <label className="share-option-row">
+                <input type="checkbox" checked={shareSummary} onChange={() => setShareSummary(!shareSummary)} />
+                <span>Share investigation summary</span>
+              </label>
+              <label className="share-option-row">
+                <input type="checkbox" checked={sharePersonalInfo} onChange={() => setSharePersonalInfo(!sharePersonalInfo)} />
+                <span>Share personal information</span>
+              </label>
+            </div>
+
+            <button className="btn-mobile-primary" style={{ marginTop: '16px' }} onClick={publishToCommunity}>
+              Publish to Community
+            </button>
+          </div>
+        </div>
+      )}
 
       {toastMessage && (
         <div style={{ background: '#16B98F', color: 'white', padding: '10px', borderRadius: '10px', fontSize: '12px', fontWeight: '700', textAlign: 'center' }}>

@@ -230,3 +230,146 @@ export const DEMO_CASES = [
     ]
   }
 ];
+
+export const COMMUNITY_REPORTS = [
+  {
+    id: 'abc-technologies-internship',
+    title: 'ABC Technologies Internship',
+    entityName: 'ABC Technologies',
+    opportunity: 'Internship Offer',
+    riskLevel: 'HIGH RISK',
+    riskScore: 82,
+    riskColor: '#E64E5A',
+    category: 'Internship',
+    recruiter: 'Rahul Sharma',
+    website: 'abc-technologies.example',
+    investigationCount: 12,
+    similarReports: 7,
+    paymentFlagged: 5,
+    summary: 'Recruiter mismatch and upfront payment request flagged by the community.',
+    tags: ['ABC Technologies', 'abc-technologies.example', 'Rahul Sharma', 'Internship'],
+    keySignals: ['Recruiter email mismatch', 'Upfront payment requested', 'Website relationship unclear'],
+    evidence: [
+      { label: 'Company identity found', type: 'positive' },
+      { label: 'Recruiter mismatch', type: 'negative' },
+      { label: 'Email/domain mismatch', type: 'negative' },
+      { label: 'Upfront payment requested', type: 'negative' },
+      { label: 'Payment relationship not verified', type: 'warning' }
+    ]
+  },
+  {
+    id: 'techconnect-hyderabad-2026',
+    title: 'TechConnect Hyderabad 2026',
+    entityName: 'TechConnect Hyderabad',
+    opportunity: 'Tech Event',
+    riskLevel: 'LOW RISK',
+    riskScore: 18,
+    riskColor: '#16B98F',
+    category: 'Event',
+    recruiter: 'Organizer team',
+    website: 'techconnect-hyderabad.example',
+    investigationCount: 8,
+    similarReports: 3,
+    paymentFlagged: 0,
+    summary: 'Official website and organizer details matched across the community dataset.',
+    tags: ['TechConnect Hyderabad', 'techconnect-hyderabad.example', 'Organizer team', 'Event'],
+    keySignals: ['Official website found', 'Organizer information matched', 'Registration link verified'],
+    evidence: [
+      { label: 'Official domain found', type: 'positive' },
+      { label: 'Organizer information matched', type: 'positive' },
+      { label: 'Registration link verified', type: 'positive' },
+      { label: 'No hidden payment requests', type: 'positive' },
+      { label: 'Participation details consistent', type: 'positive' }
+    ]
+  },
+  {
+    id: 'remote-software-internship',
+    title: 'Remote Software Internship',
+    entityName: 'NovaBuild Labs',
+    opportunity: 'Software Internship',
+    riskLevel: 'MEDIUM RISK',
+    riskScore: 52,
+    riskColor: '#F5A12A',
+    category: 'Internship',
+    recruiter: 'John Recruiter',
+    website: 'novabuild.ai',
+    investigationCount: 5,
+    similarReports: 2,
+    paymentFlagged: 1,
+    summary: 'Company exists but recruiter identity and registration source need more verification.',
+    tags: ['NovaBuild Labs', 'novabuild.ai', 'John Recruiter', 'Internship'],
+    keySignals: ['Company found', 'Recruiter identity unclear', 'Registration source needs verification'],
+    evidence: [
+      { label: 'Company was identified in public records', type: 'positive' },
+      { label: 'Recruiter identity is still unclear', type: 'warning' },
+      { label: 'Registration source needs verification', type: 'warning' },
+      { label: 'No obvious payment request detected', type: 'positive' }
+    ]
+  },
+  {
+    id: 'recruiter-opportunity',
+    title: 'Recruiter Opportunity',
+    entityName: 'Northstar Consulting',
+    opportunity: 'Recruitment Call',
+    riskLevel: 'MEDIUM RISK',
+    riskScore: 47,
+    riskColor: '#F5A12A',
+    category: 'Recruitment',
+    recruiter: 'John Recruiter',
+    website: 'northstar-careers.example',
+    investigationCount: 6,
+    similarReports: 4,
+    paymentFlagged: 2,
+    summary: 'Recruiter identity and call process raise questions though the company image is plausible.',
+    tags: ['Northstar Consulting', 'northstar-careers.example', 'John Recruiter', 'Recruitment'],
+    keySignals: ['Company found', 'Recruiter identity unclear', 'Call process may need verification'],
+    evidence: [
+      { label: 'Company identity exists', type: 'positive' },
+      { label: 'Recruiter identity is partially verified', type: 'warning' },
+      { label: 'Offer flow is not yet fully validated', type: 'warning' },
+      { label: 'No direct payment request in sample record', type: 'positive' }
+    ]
+  },
+  {
+    id: 'student-portal-access',
+    title: 'Student Portal Access',
+    entityName: 'CampusLink',
+    opportunity: 'Student Verification Portal',
+    riskLevel: 'LOW RISK',
+    riskScore: 26,
+    riskColor: '#16B98F',
+    category: 'Portal',
+    recruiter: 'Portal support',
+    website: 'campuslink.example',
+    investigationCount: 4,
+    similarReports: 1,
+    paymentFlagged: 0,
+    summary: 'Strong verification pattern with clear support paths and no unusual payment steps.',
+    tags: ['CampusLink', 'campuslink.example', 'Portal support', 'Student Verification'],
+    keySignals: ['Portal verified', 'Support contact matched', 'No suspicious fee flow'],
+    evidence: [
+      { label: 'Portal is linked to official institution contact', type: 'positive' },
+      { label: 'Support route was found in official app', type: 'positive' },
+      { label: 'Verification steps match expectations', type: 'positive' },
+      { label: 'No unusual payment requirement', type: 'positive' }
+    ]
+  }
+];
+
+export const COMMUNITY_ENTITY_GRAPH = [
+  {
+    entity: 'ABC Technologies',
+    relatedTo: ['abc-technologies.example', 'Rahul Sharma', 'Internship Offer'],
+    reports: ['abc-technologies-internship']
+  },
+  {
+    entity: 'TechConnect Hyderabad',
+    relatedTo: ['techconnect-hyderabad.example', 'Organizer team', 'Tech Event'],
+    reports: ['techconnect-hyderabad-2026']
+  },
+  {
+    entity: 'John Recruiter',
+    relatedTo: ['NovaBuild Labs', 'Northstar Consulting', 'Recruitment Call'],
+    reports: ['remote-software-internship', 'recruiter-opportunity']
+  }
+];

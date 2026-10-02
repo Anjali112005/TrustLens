@@ -12,7 +12,7 @@ export default function PhoneFrame({
   activeTab,
   setActiveTab
 }) {
-  const isTabScreen = ['home', 'cases', 'history', 'profile'].includes(currentScreen);
+  const isTabScreen = ['home', 'cases', 'community', 'history', 'profile'].includes(currentScreen);
 
   return (
     <div className="smartphone-frame">

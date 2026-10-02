@@ -18,18 +18,23 @@ import VoiceScreen from './components/screens/VoiceScreen';
 import CasesScreen from './components/screens/CasesScreen';
 import HistoryScreen from './components/screens/HistoryScreen';
 import ProfileScreen from './components/screens/ProfileScreen';
-import { DEMO_CASES } from './data/demoCases';
+import CommunityScreen from './components/screens/CommunityScreen';
+import CommunityDetailScreen from './components/screens/CommunityDetailScreen';
+import { DEMO_CASES, COMMUNITY_REPORTS } from './data/demoCases';
 
 export default function App() {
   const [currentScreen, setCurrentScreen] = useState('home');
   const [activeTab, setActiveTab] = useState('home');
   const [activeCaseId, setActiveCaseId] = useState('suspicious-internship');
+  const [selectedCommunityId, setSelectedCommunityId] = useState(COMMUNITY_REPORTS[0].id);
   const [processingTarget, setProcessingTarget] = useState('event_details');
+  const [communityReports, setCommunityReports] = useState(COMMUNITY_REPORTS);
+  const [communityToast, setCommunityToast] = useState('');
 
   // Navigate helper
   const handleNavigate = (screen) => {
     setCurrentScreen(screen);
-    if (['home', 'cases', 'history', 'profile'].includes(screen)) {
+    if (['home', 'cases', 'community', 'history', 'profile'].includes(screen)) {
       setActiveTab(screen);
     }
   };
@@ -59,7 +64,7 @@ export default function App() {
 
   // Get current screen title & back handler
   let screenTitle = 'TrustLens';
-  let showBack = !['home', 'cases', 'history', 'profile'].includes(currentScreen);
+  let showBack = !['home', 'cases', 'community', 'history', 'profile'].includes(currentScreen);
   let onBackHandler = () => setCurrentScreen('home');
 
   if (currentScreen === 'camera') {
@@ -95,7 +100,44 @@ export default function App() {
     onBackHandler = () => setCurrentScreen('home');
   } else if (currentScreen === 'voice') {
     screenTitle = 'Voice Investigator';
+  } else if (currentScreen === 'community') {
+    screenTitle = 'Community';
+    onBackHandler = () => setCurrentScreen('home');
+  } else if (currentScreen === 'community_detail') {
+    screenTitle = 'Community Evidence';
+    onBackHandler = () => setCurrentScreen('community');
   }
+
+  const handlePublishToCommunity = (caseId) => {
+    const selectedCase = DEMO_CASES.find((entry) => entry.id === caseId) || DEMO_CASES[0];
+    const newReport = {
+      id: `${caseId}-shared-${Date.now()}`,
+      title: selectedCase.title,
+      entityName: selectedCase.entityName || selectedCase.title,
+      opportunity: selectedCase.category || selectedCase.role || 'Investigation',
+      riskLevel: selectedCase.riskLevel,
+      riskScore: selectedCase.riskScore,
+      riskColor: selectedCase.riskColor,
+      category: selectedCase.category || 'Investigation',
+      recruiter: selectedCase.recruiter || 'Unknown recruiter',
+      website: selectedCase.website || 'private-source.example',
+      investigationCount: 1,
+      similarReports: 1,
+      paymentFlagged: selectedCase.paymentRequired ? 1 : 0,
+      summary: selectedCase.summary,
+      tags: [selectedCase.entityName || selectedCase.title, selectedCase.category || 'Investigation', selectedCase.recruiter || 'Unknown recruiter'],
+      keySignals: selectedCase.signals.slice(0, 3).map((signal) => signal.text),
+      evidence: selectedCase.signals.map((signal) => ({
+        label: signal.text,
+        type: signal.type === 'positive' ? 'positive' : signal.type === 'negative' ? 'negative' : 'warning'
+      }))
+    };
+
+    setCommunityReports((prev) => [newReport, ...prev]);
+    setSelectedCommunityId(newReport.id);
+    setCommunityToast('Investigation shared with the TrustLens community.');
+    setCurrentScreen('community');
+  };
 
   // Render current phone screen content
   const renderPhoneScreen = () => {
@@ -205,6 +247,11 @@ export default function App() {
             caseId={activeCaseId}
             onNavigate={handleNavigate}
             onSelectStep={(step) => setCurrentScreen(step)}
+            onOpenCommunityReport={(reportId) => {
+              setSelectedCommunityId(reportId);
+              setCurrentScreen('community_detail');
+            }}
+            onPublishToCommunity={handlePublishToCommunity}
           />
         );
 
@@ -228,6 +275,31 @@ export default function App() {
           <HistoryScreen
             onSelectCase={handleSelectCase}
             onNavigate={handleNavigate}
+          />
+        );
+
+      case 'community':
+        return (
+          <CommunityScreen
+            communityReports={communityReports}
+            communityToast={communityToast}
+            onOpenReport={(reportId) => {
+              setSelectedCommunityId(reportId);
+              setCurrentScreen('community_detail');
+            }}
+          />
+        );
+
+      case 'community_detail':
+        return (
+          <CommunityDetailScreen
+            report={communityReports.find((report) => report.id === selectedCommunityId) || communityReports[0]}
+            relatedReports={communityReports.filter((report) => {
+              if (report.id === selectedCommunityId) return false;
+              const currentReport = communityReports.find((entry) => entry.id === selectedCommunityId) || communityReports[0];
+              if (!currentReport) return false;
+              return currentReport.tags.some((tag) => report.tags.includes(tag));
+            })}
           />
         );
 
