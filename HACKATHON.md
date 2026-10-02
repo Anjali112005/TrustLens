@@ -16,71 +16,224 @@ Organizers: iQOO × Reskilll
 Prize Pool: ₹40,00,000 across the series
 ```
 
-The Grand Finale brings together top teams from the four City Battles along with eligible direct Finale registrations.
+The Grand Finale brings together teams from the City Battles along with eligible direct Finale registrations.
 
 ---
 
 # 2. Grand Finale Tracks
 
-The Grand Finale has six tracks:
+The Grand Finale includes six tracks:
 
-| Track               | Scope                                                                   |
-| ------------------- | ----------------------------------------------------------------------- |
-| **Mobility**        | Navigation, EVs, public transport, parking and travel                   |
-| **Community App**   | AI-powered communities for developers, professionals or interest groups |
-| **Smart Living**    | Smart homes, IoT, connected devices and everyday convenience            |
-| **Productivity**    | AI-powered work, automation, information and workflow solutions         |
-| **Developer Tools** | AI tools for development, testing, deployment and collaboration         |
-| **Open Innovation** | Any domain or idea outside the defined tracks                           |
+| Track               | Scope                                                                                       |
+| ------------------- | ------------------------------------------------------------------------------------------- |
+| **Mobility**        | Navigation, EVs, public transport, parking and travel                                       |
+| **Community App**   | Community apps connecting developers, professionals, or interest groups with AI at the core |
+| **Smart Living**    | Smart homes, IoT, connected devices and everyday convenience                                |
+| **Productivity**    | AI-powered work, automation, information and workflow solutions                             |
+| **Developer Tools** | AI tools for development, testing, deployment and collaboration                             |
+| **Open Innovation** | Ideas outside the defined tracks                                                            |
 
-TrustLens is best positioned under **Open Innovation**, because it addresses digital trust and investigation rather than a specific domain track.
+### Target Track: Community App
 
----
+TrustLens is being positioned for the **Community App** track.
 
-# 3. Why TrustLens Fits the Grand Finale
+The track focuses on building a community application that is not specific to iQOO and connects developers, professionals, or interest groups, with AI — preferably on-device — at the core.
 
-TrustLens addresses a real-world problem:
-
-> **How can a user determine whether a digital opportunity can actually be trusted?**
-
-Users increasingly encounter:
-
-```text
-Internship
-Job Offer
-Event
-Recruiter
-Website
-QR Code
-Payment Request
-Document
-```
-
-through their phones.
-
-TrustLens turns the phone into an **AI-powered investigation device**.
-
-```text
-Phone Camera / Upload / Voice
-              ↓
-       Multimodal AI
-              ↓
-      Evidence Extraction
-              ↓
-       Cross Verification
-              ↓
-       Risk Analysis
-              ↓
-      Evidence Graph
-              ↓
-      Trust Report
-```
+TrustLens extends its individual investigation workflow into a **community-powered trust and investigation platform**.
 
 ---
 
-# 4. Official Evaluation Criteria
+# 3. Why TrustLens Fits the Community App Track
 
-The official scoring system contains **six evaluation dimensions totaling 100%**.
+TrustLens addresses a problem commonly faced by students, developers, professionals, job seekers, and technology communities:
+
+> **How can we know whether a digital opportunity or piece of information can actually be trusted?**
+
+People encounter:
+
+```text
+Internships
+Job Offers
+Recruiters
+Events
+Websites
+QR Codes
+Documents
+Payment Requests
+```
+
+through their phones and online communities.
+
+TrustLens allows individuals to investigate suspicious evidence and, in the planned community layer, share useful findings with others.
+
+```text
+Individual User
+      ↓
+Evidence
+      ↓
+AI Investigation
+      ↓
+Community Insight
+      ↓
+Shared Trust Intelligence
+```
+
+One person's investigation can potentially help another person avoid the same suspicious opportunity.
+
+---
+
+# 4. TrustLens Community Vision
+
+The planned community layer connects:
+
+```text
+Students
+Developers
+Professionals
+Job Seekers
+Event Participants
+Technology Communities
+        ↓
+   TRUSTLENS COMMUNITY
+        ↓
+Share / Investigate / Verify
+        ↓
+AI-Powered Trust Analysis
+```
+
+Community members could share suspicious:
+
+* Internship offers
+* Job postings
+* Recruiter profiles
+* Events
+* Websites
+* QR codes
+* Payment requests
+* Digital documents
+
+The AI layer helps organize the information, identify relationships, compare evidence, and surface useful trust signals.
+
+---
+
+# 5. Core Product Idea
+
+TrustLens is not simply:
+
+```text
+URL Checker
+Spam Detector
+QR Scanner
+Company Search
+Generic Chatbot
+```
+
+The key idea is:
+
+> **Relationship-based investigation of evidence.**
+
+Example:
+
+```text
+Company
+   │
+   ├── Website
+   ├── Recruiter
+   │     └── Email
+   ├── Internship Offer
+   ├── Event
+   └── Payment Request
+```
+
+TrustLens asks:
+
+> **Do these pieces of evidence actually belong together?**
+
+This allows the system to identify inconsistencies that may not be visible when checking only one signal.
+
+---
+
+# 6. Community + AI Workflow
+
+The planned community experience:
+
+```text
+Community Evidence
+        ↓
+Camera / Upload / Voice
+        ↓
+Multimodal AI
+        ↓
+Evidence Extraction
+        ↓
+Entity Resolution
+        ↓
+Verification
+        ↓
+Community Signals
+        ↓
+Risk Analysis
+        ↓
+Evidence Graph
+        ↓
+Explainable Trust Report
+```
+
+The AI is intended to be part of the **core community experience**, rather than an additional chatbot feature.
+
+---
+
+# 7. Current Demo vs Grand Finale
+
+The current repository contains a **demo/prototype**.
+
+It demonstrates the concept and intended user experience.
+
+### Current Demo
+
+```text
+Controlled Evidence
+       ↓
+Demo Investigation
+       ↓
+Risk / Result
+       ↓
+Evidence Relationship Concept
+```
+
+### Grand Finale Build
+
+```text
+Real User Evidence
+       ↓
+Camera / Upload / Voice
+       ↓
+Multimodal AI
+       ↓
+Evidence Extraction
+       ↓
+Entity Resolution
+       ↓
+Verification
+       ↓
+Community Signals
+       ↓
+Investigation Engine
+       ↓
+Risk Analysis
+       ↓
+Evidence Graph
+       ↓
+Explainable Trust Report
+```
+
+The community backend, complete investigation engine, real verification pipeline, and on-device AI capabilities are part of the **Grand Finale implementation direction**.
+
+---
+
+# 8. Official Evaluation Criteria
+
+The official scoring system contains six evaluation dimensions totaling 100%.
 
 | Evaluation Criterion    |   Weight |
 | ----------------------- | -------: |
@@ -92,23 +245,17 @@ The official scoring system contains **six evaluation dimensions totaling 100%**
 | **Demo & Presentation** |  **10%** |
 | **Total**               | **100%** |
 
-The rubric combines jury evaluation with device-based HackTracker measurements for creative phone use and Office Kit usage.
+The rubric also uses device-based measurement for relevant phone and Office Kit usage.
 
 ---
 
-# 5. TrustLens Scoring Strategy
+# 9. TrustLens Scoring Strategy
 
-## 5.1 End Product Quality — 30%
+## 9.1 End Product Quality — 30%
 
-### Judge Focus
+The highest priority is a reliable end-to-end product.
 
-* Does it work?
-* Is it useful?
-* Would people actually use it?
-
-### TrustLens Approach
-
-The product should provide one complete workflow:
+The final workflow should be:
 
 ```text
 Capture Evidence
@@ -119,66 +266,70 @@ Verify Evidence
       ↓
 Find Relationships
       ↓
+Use Community Signals
+      ↓
 Identify Risk
       ↓
 Explain Result
 ```
 
-Instead of presenting multiple disconnected AI features, the final build should demonstrate a reliable end-to-end investigation.
-
 ### Target
 
 ```text
 ✓ Working core workflow
-✓ Smooth phone experience
+✓ Useful community experience
+✓ Smooth phone interaction
 ✓ Clear investigation result
-✓ Useful recommendations
 ✓ Explainable output
 ```
 
----
-
-# 6. Novelty & Impact — 20%
-
-TrustLens should not position itself as simply a:
-
-```text
-URL Checker
-Spam Detector
-QR Scanner
-Company Search
-Chatbot
-```
-
-The key idea is **relationship-based investigation**.
-
-Example:
-
-```text
-Company
- ├── Website
- ├── Recruiter
- │     └── Email
- ├── Offer
- ├── Event
- └── Payment
-```
-
-TrustLens asks:
-
-> **Do these pieces of evidence actually belong together?**
-
-This allows the system to identify inconsistencies that may not be visible when checking only one signal.
+A smaller working product is better than a large unfinished system.
 
 ---
 
-# 7. Creative Phone Use — 15%
+# 10. Novelty & Impact — 20%
 
-This is a major part of the iQOO Hackathon.
+TrustLens combines:
 
-The official rules require the iQOO phone to be the build and demo surface, with camera, voice and on-device AI contributing to the creative-phone-use score.
+```text
+Multimodal AI
+       +
+Community Intelligence
+       +
+Evidence Verification
+       +
+Relationship Analysis
+```
 
-TrustLens will use:
+Instead of only asking:
+
+> "Is this website safe?"
+
+TrustLens can investigate:
+
+```text
+Who is the company?
+        ↓
+Who is the recruiter?
+        ↓
+Does the email match?
+        ↓
+Does the website match?
+        ↓
+Is the offer consistent?
+        ↓
+Has the community reported similar evidence?
+        ↓
+What risk signals exist?
+```
+
+The long-term goal is to create a **shared trust layer** where useful investigation results can help other community members.
+
+---
+
+# 11. Creative Phone Use — 15%
+
+The phone is central to the TrustLens experience.
 
 ### Camera
 
@@ -197,7 +348,7 @@ Scan QR
      ↓
 Extract URL
      ↓
-Verify Registration Source
+Investigate Registration Source
 ```
 
 ### Voice
@@ -218,24 +369,61 @@ The phone should be an actual part of the investigation workflow, not simply a s
 
 ---
 
-# 8. Technical Depth — 15%
+# 12. On-Device / Local AI Direction
+
+The Community App track prefers AI to be **at the core**, with on-device AI being preferred where technically practical.
+
+TrustLens will evaluate local/on-device AI for suitable tasks during the Grand Finale.
+
+Possible architecture:
+
+```text
+                 TrustLens
+                     │
+          ┌──────────┴──────────┐
+          ↓                     ↓
+   Local / On-Device AI      Cloud AI
+          │                     │
+          └──────────┬──────────┘
+                     ↓
+              Investigation
+```
+
+Possible on-device responsibilities may include:
+
+* Initial image understanding
+* OCR
+* Lightweight classification
+* Local text processing
+* Voice interaction
+* Privacy-sensitive preprocessing
+
+Cloud AI and external verification services can be used where required.
+
+The exact model will depend on the available iQOO hardware and performance achievable during the Finale.
+
+---
+
+# 13. Technical Depth — 15%
 
 TrustLens is designed as more than a single LLM prompt.
 
 ### Planned Architecture
 
 ```text
-Android / Mobile
+Android / Kotlin
        ↓
 FastAPI
        ↓
 Multimodal AI
        ↓
-Evidence Extraction
+Evidence Processing
        ↓
 Entity Resolution
        ↓
 Verification
+       ↓
+Community Intelligence
        ↓
 Investigation Engine
        ↓
@@ -254,53 +442,72 @@ Python
 FastAPI
 Gemini Multimodal AI
 OCR / Vision
+Speech-to-Text
+Text-to-Speech
 REST APIs
 MySQL
 Verification APIs
 Evidence Relationship Model
 Risk Analysis
+Community Data Layer
 ```
 
-The technical depth comes from combining multimodal AI with structured evidence processing, verification and explainable reasoning.
+The technical depth comes from combining AI with structured evidence processing, community intelligence, verification, and explainable reasoning.
 
 ---
 
-# 9. Local / Open-Source AI
+# 14. Community Intelligence
 
-The official hackathon guide gives brownie points for having a **local or open-source model at the core**, with the phone in the loop through Office Kit.
+The community layer should not simply become a social feed.
 
-Therefore, the final implementation should evaluate whether a local/open-source model can be incorporated into TrustLens where technically practical.
+Its purpose is to create **useful investigation intelligence**.
 
-Possible architecture:
+Example:
 
 ```text
-                TrustLens
-                    │
-          ┌─────────┴─────────┐
-          ↓                   ↓
-   Local/Open Model       Cloud AI
-          │                   │
-          └─────────┬─────────┘
-                    ↓
-             Investigation
+User A
+   ↓
+Reports suspicious internship
+   ↓
+TrustLens extracts entities
+   ↓
+Company / Recruiter / Website identified
+   ↓
+Evidence stored as structured signals
+   ↓
+User B encounters same recruiter
+   ↓
+TrustLens finds related evidence
+   ↓
+Previous community signal shown
 ```
 
-The exact model will depend on the available iQOO hardware and the performance achievable during the Finale.
+This creates a feedback loop:
+
+```text
+Investigate
+    ↓
+Contribute
+    ↓
+Connect Evidence
+    ↓
+Help Others
+    ↓
+Improve Community Trust Intelligence
+```
 
 ---
 
-# 10. Office Kit Usage — 10%
+# 15. Office Kit Usage — 10%
 
-Office Kit connects the iQOO phone with the laptop through capabilities including:
+Office Kit can connect the iQOO phone with the laptop through capabilities such as:
 
 * Screen mirroring
 * Shared clipboard
 * File transfer
 * Remote control
 
-The official rules state that Office Kit usage is measured through HackTracker device data.
-
-TrustLens can use Office Kit for:
+TrustLens can use the phone and laptop together during development and the hackathon workflow.
 
 ```text
 iQOO Phone
@@ -310,7 +517,7 @@ Office Kit
 Development Laptop
 ```
 
-Possible usage:
+Possible workflow:
 
 ```text
 Phone
@@ -325,18 +532,18 @@ Investigation
  ↓
 Phone
  ↓
-Trust Report
+Community / Trust Result
 ```
 
-The phone should remain central to the workflow rather than being used only at the end for presentation.
+The phone should remain central to the workflow.
 
 ---
 
-# 11. Demo & Presentation — 10%
+# 16. Demo & Presentation — 10%
 
-The official judging criteria specify a **3–5 minute pitch**.
+The final presentation should communicate the idea quickly and clearly.
 
-The TrustLens presentation should follow a simple story.
+Recommended story:
 
 ```text
 1. Real Problem
@@ -349,9 +556,9 @@ The TrustLens presentation should follow a simple story.
        ↓
 5. Cross Verification
        ↓
-6. Risk Signals
+6. Community Signal
        ↓
-7. Evidence Graph
+7. Risk Analysis
        ↓
 8. Trust Report
 ```
@@ -360,15 +567,15 @@ The TrustLens presentation should follow a simple story.
 
 Start with the real-world problem:
 
-> "A friend paid ₹850 for an internship, completed the work, and later discovered that the opportunity was a scam."
+> **"A friend paid ₹850 for an internship, completed the work, and later discovered that the opportunity was a scam."**
 
-Then demonstrate how TrustLens would investigate the evidence before the user commits time or money.
+Then demonstrate how TrustLens can investigate the opportunity before the user commits time or money.
 
 ---
 
-# 12. Recommended Grand Finale Demo
+# 17. Recommended Grand Finale Demo
 
-### Scenario
+## Scenario
 
 ```text
 Internship Offer
@@ -382,7 +589,7 @@ Website
 Registration / Payment Request
 ```
 
-The user scans the offer using the iQOO phone.
+The user captures the offer using the iQOO phone.
 
 TrustLens extracts:
 
@@ -396,7 +603,7 @@ Fee
 Registration Link
 ```
 
-Then investigates their relationships.
+Then investigates the relationships.
 
 Example result:
 
@@ -418,111 +625,129 @@ Then show:
 ```text
 Evidence Graph
       ↓
+Community Signals
+      ↓
 Why It Is Suspicious
       ↓
 Recommended Next Action
 ```
 
-This demonstrates the complete product rather than a simple AI-generated answer.
+The demo should show how an individual investigation can also become useful community intelligence.
 
 ---
 
-# 13. Product Quality Priorities
+# 18. Product Quality Priorities
 
-Because **End Product Quality carries the highest weight (30%)**, development should prioritize a reliable core workflow over excessive features.
+Because **End Product Quality carries the highest weight**, development should prioritize a reliable core workflow.
 
-### Priority 1
+### Priority 1 — Core Investigation
 
 ```text
 Camera → AI → Investigation → Result
 ```
 
-### Priority 2
+### Priority 2 — Voice
 
 ```text
 Voice → Investigation → Explanation
 ```
 
-### Priority 3
+### Priority 3 — QR
 
 ```text
 QR → URL → Verification
 ```
 
-### Priority 4
+### Priority 4 — Community
 
 ```text
-Evidence Graph
+Investigation → Share Signal → Community Intelligence
 ```
 
-### Priority 5
+### Priority 5 — Evidence Graph
 
-Additional advanced features.
+```text
+Company
+ ↕
+Recruiter
+ ↕
+Website
+ ↕
+Offer
+ ↕
+Payment
+```
 
-> **A smaller working product is better than a large unfinished system.**
+### Priority 6 — Advanced Features
+
+Additional features should only be added after the core workflow is reliable.
 
 ---
 
-# 14. Grand Finale Build Direction
+# 19. Grand Finale Build Direction
 
-The current repository contains the **TrustLens demo/prototype**.
-
-The Grand Finale implementation should focus on building the actual investigation engine.
-
-### Current Demo
+The current repository should be treated as:
 
 ```text
-Controlled Evidence
-       ↓
-Demo Investigation
-       ↓
-Demonstration Result
+Design
++
+Prototype
++
+Preparation
 ```
 
-### Grand Finale Build
+The Grand Finale implementation should focus on:
 
 ```text
-Real User Evidence
-       ↓
-Camera / Upload / Voice
-       ↓
+Phone Experience
+        ↓
 Multimodal AI
-       ↓
-Evidence Extraction
-       ↓
-Entity Resolution
-       ↓
-Verification
-       ↓
+        ↓
 Investigation Engine
-       ↓
-Risk Analysis
-       ↓
+        ↓
+Community Intelligence
+        ↓
+Verification
+        ↓
 Evidence Graph
-       ↓
-Explainable Trust Report
+        ↓
+Trust Report
 ```
+
+The objective is not to add features simply for quantity.
+
+The objective is to create a **working Community App with AI at its core**.
 
 ---
 
-# 15. Grand Finale Success Criteria
-
-Our goal is to make TrustLens strong across all six evaluation dimensions.
+# 20. Grand Finale Success Criteria
 
 | Area                 | TrustLens Goal                                      |
 | -------------------- | --------------------------------------------------- |
-| **Product Quality**  | Reliable end-to-end investigation                   |
-| **Novelty & Impact** | Evidence relationship investigation                 |
+| **Product Quality**  | Reliable community + investigation workflow         |
+| **Novelty & Impact** | Community-powered trust intelligence                |
 | **Phone Use**        | Camera + QR + Voice + mobile AI                     |
 | **Technical Depth**  | Multimodal AI + verification + investigation engine |
 | **Office Kit**       | Meaningful phone ↔ laptop workflow                  |
-| **Presentation**     | Clear 3–5 minute investigation story                |
+| **Presentation**     | Clear real-world investigation story                |
 
 ---
 
-# 16. Final Product Vision
+# 21. Final Product Vision
 
-TrustLens should demonstrate:
+TrustLens should evolve from:
+
+```text
+Individual Investigation
+```
+
+into:
+
+```text
+Community-Powered AI Trust Network
+```
+
+### Vision
 
 ```text
               iQOO PHONE
@@ -533,55 +758,59 @@ TrustLens should demonstrate:
        │          │          │
        └──────────┼──────────┘
                   ↓
-          MULTIMODAL AI
+            MULTIMODAL AI
                   ↓
-         EVIDENCE ENGINE
+          EVIDENCE ENGINE
                   ↓
-          VERIFICATION
+             COMMUNITY
                   ↓
-         RISK ANALYSIS
+            VERIFICATION
                   ↓
-         EVIDENCE GRAPH
+           RISK ANALYSIS
                   ↓
-          TRUST REPORT
+           EVIDENCE GRAPH
+                  ↓
+            TRUST REPORT
 ```
 
-The objective is to build something that is:
+The final product should be:
 
-**Phone-first. AI-native. Evidence-driven. Explainable. Useful.**
+**Phone-first. AI-native. Community-powered. Evidence-driven. Explainable. Useful.**
 
 ---
 
-# 17. Important Hackathon Constraint
+# 22. Important Hackathon Constraint
 
-The official rules state that entries must be **original work built during the event window**. Open-source libraries and frameworks are allowed with attribution, but participants cannot bring in a completed application.
+The current repository contains a prototype and preparation material.
 
-Therefore, the current TrustLens repository should be treated as:
+The actual Grand Finale implementation must follow the event's rules regarding originality and the permitted build period.
 
-```text
-Design / Prototype / Preparation
-```
+Open-source libraries and frameworks may be used according to the event rules, with appropriate attribution.
 
-The actual Grand Finale implementation should be developed according to the event's rules and build window.
+The current repository should therefore **not be presented as the completed Grand Finale product**.
 
 ---
 
-# 18. TrustLens × iQOO Grand Finale
+# 23. TrustLens × iQOO Grand Finale
 
-The Grand Finale opportunity is not simply about adding more features.
+The goal is not simply to build another AI application.
 
 The goal is to demonstrate:
 
 ```text
 REAL PROBLEM
      +
+COMMUNITY
+     +
 PHONE-FIRST EXPERIENCE
      +
-MULTIMODAL AI
+AI AT THE CORE
+     +
+MULTIMODAL INPUT
      +
 TECHNICAL DEPTH
      +
-NOVEL INVESTIGATION
+EVIDENCE-BASED INVESTIGATION
      +
 STRONG DEMO
 ```
